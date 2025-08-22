@@ -1,11 +1,10 @@
+import autogen
+import streamlit as st
+
 llm_config = {
     "model": "gpt-4o", 
     "api_key": st.secrets["OPENAI_API_KEY"]
 }
-
-
-import autogen
-import streamlit as st
 
 
 writing_tasks = [
