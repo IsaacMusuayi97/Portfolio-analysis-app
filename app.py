@@ -1,10 +1,15 @@
-import autogen
-import streamlit as st
+import os from dotenv import load_dotenv
+
+load_dotenv()
 
 llm_config = {
     "model": "gpt-4o", 
-    "api_key": st.secrets["OPENAI_API_KEY"]
-}
+    "api_key": os.getenv("OPENAI_API_KEY") 
+    }
+
+
+import autogen
+import streamlit as st
 
 
 writing_tasks = [
